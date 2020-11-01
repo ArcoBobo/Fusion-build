@@ -140,8 +140,6 @@ echo "- Deleting any files in /etc/skel"
 echo "- Getting the last version of bashrc in /etc/skel"
 echo "- Removing the old packages.x86_64 file from work folder"
 echo "- Copying the new packages.x86_64 file to the work folder"
-echo "- Removing the old pacman.conf file from work folder"
-echo "- Copying the new pacman.conf file to the work folder"
 
 tput sgr0
 echo "################################################################## "
@@ -160,13 +158,6 @@ echo
 	echo
 	echo "Copying the new packages.x86_64 file to the work folder"
 	cp -f ../archiso/packages.x86_64 ../work/archiso/packages.x86_64
-
-	echo "Removing the old pacman.conf file from work folder"
-	rm ../work/archiso/pacman.conf
-	echo
-	echo "Copying the new pacman.conf file to the work folder"
-	cp -f ../archiso/pacman.conf ../work/archiso/pacman.conf
-
 
 
 echo
