@@ -30,18 +30,18 @@ echo
 	desktop="Fusion"
 	lightdmDesktop="i3"
 
-	arcolinuxVersion=y$(date +%y).m$(date +%m).d$(date +%d)
+	arcoboboVersion=y$(date +%y).m$(date +%m).d$(date +%d)
 
-	isoLabel='arcobobo-'$desktop'-'$arcolinuxVersion'-x86_64.iso'
+	isoLabel='arcobobo-'$desktop'-'$arcoboboVersion'-x86_64.iso'
 
 	# setting of the general parameters
-	buildFolder=$HOME"/arcolinuxb-build"
-	outFolder=$HOME"/ArcoLinuxB-Out"
+	buildFolder=$HOME"/arcobobo-build"
+	outFolder=$HOME"/ArcoBobo-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
 	
 	echo "################################################################## "		
 	echo "Building the desktop                   : "$desktop
-	echo "Bulding version                        : "$arcolinuxVersion
+	echo "Building version                       : "$arcoboboVersion
 	echo "Iso label                              : "$isoLabel
 	echo "Do you have the right archiso version? : "$archisoVersion
 	echo "Build folder                           : "$buildFolder
@@ -117,7 +117,7 @@ tput setaf 2
 echo "Phase 3 :"
 echo "- Deleting the work folder if one exists"
 echo "- Deleting the build folder if one exists"
-echo "- Git clone the latest ArcoLinux-iso from github"
+echo "- Git clone the latest ArcoBobo-iso from github"
 tput sgr0
 echo "################################################################## "
 echo
